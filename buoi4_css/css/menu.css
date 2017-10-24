@@ -1,0 +1,37 @@
+.container{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.menucha li{
+    
+    float: left;
+    list-style-type: none;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-left: 1px white;
+    /* border-bottom: 1px solid white; */
+    font-weight: 1px;
+    
+}
+.menucon li{
+    
+    float: none;
+    border-left: none;
+    border-bottom: 1px solid white;
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    margin-left: -59px;
+    margin-right: -20px;
+
+
+}
+.menucha li: hover .menucon li{
+    display: block;
+}

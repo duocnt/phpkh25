@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="button" value="-" class="btnTru">
+        <input type="txtSoluong" value="1" style="width:50px">
+        <input type="button" value="+" class="btnCong">
+    
+
+        <script src="JS/jquery-3.2.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.btnCong').click(function(){
+                    var soluong = $('.txtSongluong').val();
+                    soluong = parseInt(soluong);
+                    if(soluong<20){
+                        $('.txtSoluong').val(soluong+1);
+                    }
+                    if(soluong==19){
+                        $('.btnCong').attr('disabled','true')
+                    }
+                })
+            })
+        </script>
+</body>
+</html>
